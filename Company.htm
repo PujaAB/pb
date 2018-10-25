@@ -1,0 +1,213 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title></title>
+    <style type="text/css">
+    .btn {
+     background-color:lawngreen;
+   
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auto-style10:hover {
+    background-color: RoyalBlue;
+}
+
+.auto-style9:hover {
+    background-color: RoyalBlue;
+}
+        .auto-style1 {
+            width: 346px;
+            margin-left: 0px;
+        }
+
+        .auto-style2 {
+            width: 345px;
+            margin-left: 0px;
+        }
+
+        .auto-style3 {
+            height: 28px;
+            width: 348px;
+            margin-left: 0px;
+        }
+
+        .auto-style6 {
+            width: 347px;
+            margin-left: 0px;
+        }
+
+        .auto-style7 {
+            margin-left: 0px;
+        }
+
+        .auto-style8 {
+            margin-left: 16px;
+        }
+        .auto-style9 {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border-radius: 4px;
+            width: 76px;
+            border: 1px solid transparent;
+            margin-left: 61px;
+            margin-bottom: 0;
+            padding: 12px 16px;
+            background-color:red;
+            background-image: none;
+        }
+        .auto-style10 {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border-radius: 4px;
+            width: 76px;
+            border: 1px solid transparent;
+            margin-left: 19px;
+            margin-bottom: 0;
+            padding: 12px 16px;
+            background-color:blue;
+            background-image: none;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="panel panel-default">
+    <div class="panel-body">PERMISSION MASTER
+<div class="panel-body">
+                    <div class="row">
+                <div class="col-25">
+                    <label for="CompanyCode">COMPANY CODE :</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="CompanyCode" name="CompanyCode" class="auto-style1" />
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="CompanyName">COMPANY NAME : </label>
+                </div>
+                <div class="col-75">
+                    <label for="CompanyName">
+                        <input type="text" id="CompanyName" name="CompanyName" class="auto-style2" /></label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Location">LOCATION : </label>
+                </div>
+                <div class="col-75">
+                    <textarea id="LOCATION" name="location" class="auto-style3" rows="1"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Division">DIVISION : </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Division" name="Division" class="auto-style2" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="City">CITY: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="City" name="City" class="auto-style1" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Zip Code/PinCode">ZIP CODE /PINCODE: </label>
+                </div>
+                <input type="text" id="Zip Code/PinCode" name="Zip Code/PinCode" class="auto-style6" />
+            </div>
+    
+
+
+    <div class="row">
+        <div class="col-25">
+            <label for="State">STATE : </label>
+        </div>
+        <div class="col-75">
+            <select id="state" name="state" class="auto-style7">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Aasam">Aasam</option>
+            </select>
+        </div>
+
+
+        <div class="row">
+            <div class="col-25">
+                <label for="Country">&nbsp;&nbsp;&nbsp;&nbsp;COUNTRY: </label>
+            </div>
+            <div class="col-75">
+                <select id="country" name="country" class="auto-style8">
+                    <option value="India">India</option>
+                    <option value="china">China</option>
+                    <option value="USA">USA</option>
+                </select>
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+
+
+        <div class="row">
+             <button class="auto-style10"><i class="fa fa-save"></i> Save</button>
+            <button class="auto-style9"><i class="fa fa-close" ></i> Close</button>
+        </div>
+        
+    </div>
+        </div>
+            </div>
+        </div>
+</body>
+</html>
